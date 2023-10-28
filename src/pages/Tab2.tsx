@@ -17,14 +17,18 @@ import ExploreContainer from '../components/ExploreContainer';
 import './Tab2.css';
 import { camera, trash, close } from 'ionicons/icons';
 
+import { usePhotoGallery } from '../hooks/usePhotoGallery';
 
 
 const Tab2: React.FC = () => {
+  
+  const { takePhoto } = usePhotoGallery();
+
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Your Weather-Shot Galery</IonTitle>
+          <IonTitle>Your Weather-Shot Gallery</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent>
